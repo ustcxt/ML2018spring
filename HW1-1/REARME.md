@@ -10,11 +10,11 @@
 
 #### Results:
 **simulate function$\frac{\sin(5\pi x)}{5\pi x}$**
-![](./results_noisy/result_1.png)
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_1.png)
 **merged results:**
-![](./results_noisy/result_2.png)
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_2.png)
 **Compared_loss:**
-![](./results_noisy/Compare_loss.png)
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/Compare_loss.png)
 
 
 # Train on Actual Tasks
