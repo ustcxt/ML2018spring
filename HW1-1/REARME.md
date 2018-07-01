@@ -16,6 +16,7 @@
 **Compared_loss:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/Compare_loss.png)
 <br>
+
 **simulate function_2:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/result_1.png)
 **merged results:**
