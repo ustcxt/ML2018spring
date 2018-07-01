@@ -1,7 +1,7 @@
 import tensorflow as tf 
 import os
 import numpy as np
-EPOCH = 50000
+EPOCH = 10000
 BATCH_SIZE = 200
 def train_op(train_x,train_y,model,dir_name):
 	tf.reset_default_graph()
@@ -34,7 +34,7 @@ def train_op(train_x,train_y,model,dir_name):
 		ckpt = tf.train.get_checkpoint_state(dir_name)
 		if ckpt and ckpt.model_checkpoint_path:
 			print(" Model has been exists")
-			return y_pred.name
+			return y_pred.name,0
 		for epoch in range(1,EPOCH+1):
 			for batch in range(train_x.shape[0]//BATCH_SIZE):
 				x_batch  = np.reshape(train_x[batch:batch+BATCH_SIZE],(BATCH_SIZE,1))
