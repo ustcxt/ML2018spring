@@ -26,9 +26,13 @@
 
 **simulate function_2:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/result_1.png)
+<br>
 **merged results:**
+
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/result_2.png)
+
 **Compared_loss:**
+
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/Compare_loss.png)
 
 # Train on Actual Tasks
