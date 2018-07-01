@@ -10,18 +10,29 @@ import os
 EPOCH = 10000
 # Generate data_set
 def objective_function(x):
-	return math.sin(5*x*math.pi)/(5*x*math.pi)
+
+	#return math.sin(5*x*math.pi)/(5*x*math.pi)
+	
+	x = math.sin(5*x*math.pi)
+	if x<0:
+		x=-1
+	elif x==0:
+		x=0
+	else:
+		x=1
+	return [x]
+	
 train_x = np.random.normal(loc=0.0,scale=1.0,size=(2000,1))
 train_y = np.asarray([objective_function(entry) for entry in train_x],dtype=np.float)
 
  #add Guassion noisy
-train_y = train_y+0.01*np.random.normal(size=np.shape(train_x))
+#train_y = train_y+0.01*np.random.normal(size=np.shape(train_x))
 #print(np.shape(train_x))
 #print(0.9*np.random.normal(size=np.shape(train_x)))
 
 # Create a new folder to store the results
-if not os.path.exists("./results_noisy"):
-	os.makedirs('./results_noisy')
+if not os.path.exists("./results_sgn"):
+	os.makedirs('./results_sgn')
 
 print(train_x)
 print(train_y)
@@ -77,7 +88,7 @@ plt.xlim(0.0,1.0)
 plt.xlabel('x')
 plt.ylabel('y')
 plt.plot(traning_array,y_pred_deep,'b',label= 'Deep-net prediction')
-plt.savefig("./results_noisy/result_1.png")
+plt.savefig("./results_sgn/result_1.png")
 
 # merge all figures to a figure
 fig2 = plt.figure()
@@ -88,7 +99,7 @@ plt.plot(traning_array,gt,'g',label = 'ground-truth')
 plt.plot(traning_array,y_pred_shallow,'r',label='Shallow-net prediction')
 plt.plot(traning_array,y_pred_deep,'b',label= 'Deep-net prediction')
 plt.legend()
-plt.savefig('./results_noisy/result_2.png')
+plt.savefig('./results_sgn/result_2.png')
 # Draw loss_compare curve
 if loss_record_shallow!=0:
 
@@ -100,7 +111,8 @@ if loss_record_shallow!=0:
 	plt.plot(x_axis,loss_record['shallow'],label='Shallow model')
 	plt.plot(x_axis,loss_record['deep'],label='Deep model')
 	plt.legend()
-	plt.savefig('./results_noisy/Compare_loss.png')
+	plt.savefig('./results_sgn/Compare_loss.png')
+
 plt.show()
 	
 

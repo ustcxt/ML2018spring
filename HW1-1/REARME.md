@@ -9,13 +9,18 @@
 	hyper-parameters are important(i.e.tune all models to the best)<br>
 
 #### Results:
-**simulate function:**
+**simulate function_1:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_1.png)
 **merged results:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_2.png)
 **Compared_loss:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/Compare_loss.png)
-
+**simulate function_2:**
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/result_1.png)
+**merged results:**
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/result_2.png)
+**Compared_loss:**
+![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_sgn/Compare_loss.png)
 
 # Train on Actual Tasks
 ## Requirements:
