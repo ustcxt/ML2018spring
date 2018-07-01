@@ -10,7 +10,6 @@
 
 #### Results:
 **simulate function:**
-$$\frac{\sin(5\pi x)}{5\pi x}$$
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_1.png)
 **merged results:**
 ![](https://github.com/ustcxt/ML2018spring/blob/master/HW1-1/results_noisy/result_2.png)
